@@ -1,0 +1,10 @@
+---
+- name: A crap demo
+  hosts: localhost
+  connection: local
+  gather_facts: false
+  vars:
+    message: "default"
+  tasks:
+    ansible.builtin.debug:
+      msg: "{{ message }}"
