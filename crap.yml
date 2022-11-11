@@ -3,8 +3,10 @@
 - name: Echo
   hosts: localhost
   connection: local
+  vars:
+    mymessage: "hello"
 
   tasks:
     - name: Print debug message
       debug:
-        msg: Hello, world!
+        msg: "{{ mymessage }}"
