@@ -1,12 +1,10 @@
 ---
-- name: A crap demo
+# This playbook prints a simple debug message
+- name: Echo
   hosts: localhost
   connection: local
-  gather_facts: false
-  vars:
-    message: "default"
+
   tasks:
-    name: "Print crap"
-    ansible.builtin.debug:
-      msg:
-        - crap
+    - name: Print debug message
+      debug:
+        msg: Hello, world!
