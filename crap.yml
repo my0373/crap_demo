@@ -6,5 +6,6 @@
   vars:
     message: "default"
   tasks:
+    name: "Print crap"
     ansible.builtin.debug:
-      var: "{{ message }}"
+    msg: "{{ message }}"
