@@ -8,4 +8,4 @@
   tasks:
     name: "Print crap"
     ansible.builtin.debug:
-    msg: "{{ message }}"
+      msg: crap
